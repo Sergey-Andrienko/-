@@ -165,7 +165,6 @@ iframe {
 }
 
 .section {
-
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
@@ -182,9 +181,24 @@ iframe {
     text-align: center;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+.section-title {
+    width: 180px;
+    font-size: 1.4em;
+    color: #333;
+}
+}
+
+
 .section-content {
     display: flex;
     justify-content: space-around;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .section-content {
+    flex-wrap: wrap;
+}
 }
 
 .sub-title {
@@ -211,10 +225,27 @@ iframe {
 }
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+      .item-list {
+    width: 200px;
+}
+}
+
 .main-text {
     width: 980px;
     font-size: 20px;
     margin: auto;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+        .main-text {
+            width: auto;
+    font-size: 20px;
+    margin: auto;
+}
+
+
 }
 
 @media (max-width: 1024px) {
