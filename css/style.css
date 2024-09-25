@@ -1,0 +1,380 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #0f1a2e;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+ul,
+p {
+  margin: 0 0;
+  padding: 0 0;
+  list-style: none;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 80px 0 80px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin: 0 auto;
+    width: 1024px;
+    padding: 0 40px; /* Уменьшаем отступы */
+  }
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    width: 450px;
+    font-size: 34px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+
+.header-content {
+    width: 500px;
+    margin: auto;
+    font-style: italic;
+}
+
+
+
+.header-title {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(63, 63, 63);
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    width: 300px;
+    font-size: 22px;
+  }
+    .header-content {
+    width: 250px;
+    font-size: 12px;
+  }
+    .header-title {
+        font-size: 14px;
+    }
+}
+
+.header-author {
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+
+.product-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    background-color: #f9f9f9;
+}
+
+.product-container:hover {
+    transform: scale(1.05);
+}
+
+.product-title {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.product-description {
+    color: #666;
+    font-size: 1em;
+}
+
+.product-description span {
+     font-weight: bold;
+}
+
+.product-features {
+    color: #444;
+    font-size: 0.9em;
+    margin: 15px 0;
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: #e60000;
+}
+
+.section {
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    width: 450px;
+    font-size: 1.8em;
+    color: #333;
+    margin: 0 auto 15px auto;
+    text-align: center;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-title {
+    font-size: 1.4em;
+    color: #555;
+    margin-top: 15px;
+}
+
+.item-list {
+    width: 500px;
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #444;
+}
+
+
+.item-list li {
+    margin: 8px 0;
+}
+
+@media (max-width: 1024px) {
+  .item-list {
+    width: 400px;
+}
+}
+
+.main-text {
+    width: 980px;
+    font-size: 20px;
+    margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .main-text {
+    font-size: 14px;
+}
+}
+
+.main-title {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.main-sub-title {
+    padding: 15px 0;
+}
+
+.main-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #6b6b6b; /* Цвет для выделенного текста */
+    font-style: italic;
+}
+
+.black {
+    color: black;
+    font-weight: bold;
+
+}
+
+.attraction-block {
+    border: 2px solid #0f1a2e;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.attraction-title {
+    color: #0f1a2e;
+}
+
+.attraction-text {
+    font-size: 1.1em;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+.attraction-call-to-action {
+    font-weight: bold;
+    color: #d13030;
+}
+
+
+/* отзывы  */
+
+.reviews-container {
+    display: flex;
+    justify-content: space-around; /* Распределить отзывы по ширине */
+    gap: 20px; /* Промежуток между отзывами */
+    margin: 20px 0;
+    flex-wrap: wrap; /* Перенос отзывов на следующую строку при необходимости */
+}
+
+.review {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    flex-basis: 30%; /* Ширина каждого отзыва */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+}
+
+.review-photo {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.review-content {
+    flex: 1;
+}
+
+.review-author {
+    font-weight: bold;
+    color: #0f1a2e;
+}
+
+.review-text {
+    font-size: 0.9em;
+    color: #444;
+}
+
+/* author */
+
+.author-title {
+    width: 300px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+ .author-container {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+
+        }
+.author-image {
+            margin-right: 20px;
+            width: 300px; /* Ширина изображения */
+            height: 300px; /* Высота изображения */
+            object-fit: cover; /* Обеспечивает корректное отображение изображения */
+            padding-bottom: 20px;
+        }
+.author-description {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+.author-description li {
+    padding: 7px;
+}
+
+.author-text {
+    font-weight: bold;
+    padding: 15px;
+}
+
+.price-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pricing {
+  text-align: center;
+  padding: 20px;
+  border: 3px solid #4CAF50;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.currency {
+  font-size: 1.2em;
+  color: #555;
+  font-weight: bold;
+}
+
+.buy-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
