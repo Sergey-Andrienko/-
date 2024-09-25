@@ -329,6 +329,14 @@ iframe {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+.review {
+    flex-basis: auto;
+}
+    
+
+}
+
 .review-photo {
     border-radius: 50%;
     width: 80px;
@@ -359,6 +367,15 @@ iframe {
     margin: auto;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .author-title {
+    width: auto;
+    font-size: 18px;
+}    
+
+}
+
  .author-container {
             border: 1px solid #ccc;
             border-radius: 10px;
@@ -369,10 +386,9 @@ iframe {
 
         }
 .author-image {
-            margin-right: 20px;
-            width: 300px; /* Ширина изображения */
-            height: 300px; /* Высота изображения */
-            object-fit: cover; /* Обеспечивает корректное отображение изображения */
+            width: 300px; 
+            height: 300px; 
+            object-fit: cover; 
             padding-bottom: 20px;
         }
 .author-description {
