@@ -43,7 +43,15 @@ p {
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
+     .container {
+    margin: 0 auto;
+    width: 560px;
+    padding: 0 20px; /* Уменьшаем отступы */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
       .container {
     margin: 0 auto;
     width: 310px;
@@ -88,7 +96,7 @@ h1 {
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 599px) {
 
       h1 {
     width: 300px;
@@ -122,10 +130,14 @@ iframe {
     max-width: 100%;
 }
 
-.video {
+@media (min-width: 320px) and (max-width: 599px) {
+    .video {
     width: auto;
     height: auto;
 }
+}
+
+
 
 .product-container {
     border: 1px solid #ccc;
@@ -185,7 +197,7 @@ iframe {
     text-align: center;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 599px) {
 .section-title {
     width: 180px;
     font-size: 1.4em;
@@ -194,12 +206,20 @@ iframe {
 }
 
 
+
+
 .section-content {
     display: flex;
     justify-content: space-around;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 599px) {
+    .section-content {
+    flex-wrap: wrap;
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
     .section-content {
     flex-wrap: wrap;
 }
@@ -229,7 +249,7 @@ iframe {
 }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 599px) {
       .item-list {
     width: 200px;
 }
@@ -241,16 +261,21 @@ iframe {
     margin: auto;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 599px) {
 
         .main-text {
             width: auto;
-    font-size: 20px;
-    margin: auto;
+            font-size: 20px;
+            margin: auto;
+}
 }
 
-
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .main-text {
+            width: auto;
 }
+}
+
 
 @media (max-width: 1024px) {
   .main-text {
@@ -333,19 +358,27 @@ iframe {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 599px) {
 .review {
     flex-basis: auto;
 }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .review {
+    flex-basis: auto;
+}
+}
     
 
-}
+
 
 .review-photo {
     border-radius: 50%;
     width: 80px;
     height: 80px;
     margin-right: 15px;
+    object-fit: cover;
 }
 
 .review-content {
@@ -371,7 +404,7 @@ iframe {
     margin: auto;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 599px) {
 
     .author-title {
     width: auto;
