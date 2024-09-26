@@ -122,6 +122,10 @@ iframe {
     max-width: 100%;
 }
 
+.video {
+    width: auto;
+    height: auto;
+}
 
 .product-container {
     border: 1px solid #ccc;
