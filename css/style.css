@@ -35,7 +35,7 @@ p {
   padding: 0 80px 0 80px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
   .container {
     margin: 0 auto;
     width: 1024px;
@@ -51,7 +51,7 @@ p {
   }
 }
 
-@media (min-width: 320px) and (max-width: 599px) {
+@media (max-width: 599px) {
       .container {
     margin: 0 auto;
     width: 310px;
@@ -82,7 +82,7 @@ h1 {
     color: rgb(63, 63, 63);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
   h1 {
     width: 300px;
     font-size: 22px;
@@ -96,7 +96,7 @@ h1 {
     }
 }
 
-@media (min-width: 320px) and (max-width: 599px) {
+@media (max-width: 599px) {
 
       h1 {
     width: 300px;
@@ -130,7 +130,7 @@ iframe {
     max-width: 100%;
 }
 
-@media (min-width: 320px) and (max-width: 599px) {
+@media (max-width: 599px) {
     .video {
     width: auto;
     height: auto;
@@ -197,7 +197,7 @@ iframe {
     text-align: center;
 }
 
-@media (min-width: 320px) and (max-width: 599px) {
+@media (max-width: 599px) {
 .section-title {
     width: 180px;
     font-size: 1.4em;
@@ -213,7 +213,7 @@ iframe {
     justify-content: space-around;
 }
 
-@media (min-width: 320px) and (max-width: 599px) {
+@media (max-width: 599px) {
     .section-content {
     flex-wrap: wrap;
 }
@@ -243,13 +243,13 @@ iframe {
     margin: 8px 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
   .item-list {
     width: 400px;
 }
 }
 
-@media (min-width: 320px) and (max-width: 599px) {
+@media (max-width: 599px) {
       .item-list {
     width: 200px;
 }
@@ -261,7 +261,7 @@ iframe {
     margin: auto;
 }
 
-@media (min-width: 320px) and (max-width: 599px) {
+@media (max-width: 599px) {
 
         .main-text {
             width: auto;
@@ -277,7 +277,7 @@ iframe {
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
   .main-text {
     font-size: 14px;
 }
@@ -358,7 +358,7 @@ iframe {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
 }
 
-@media (min-width: 320px) and (max-width: 599px) {
+@media (max-width: 599px) {
 .review {
     flex-basis: auto;
 }
@@ -404,7 +404,7 @@ iframe {
     margin: auto;
 }
 
-@media (min-width: 320px) and (max-width: 599px) {
+@media (max-width: 599px) {
 
     .author-title {
     width: auto;
